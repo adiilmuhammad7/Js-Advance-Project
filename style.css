@@ -1,0 +1,98 @@
+.forecast-card {
+    border: 1px solid black;
+    padding: 15px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.forecast-card img {
+    width: 60px;
+    height: 60px;
+}
+#forecast {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+body.dark {
+    background-color: #222;
+    color: white;
+}
+
+
+
+/* for mobile */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+   input {
+    width: 100%;
+}
+
+button {
+    width: auto;
+}
+}
+/*forecast*/
+@media (max-width: 600px) {
+    #forecast {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .forecast-card {
+        width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    #weathericon {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+#cityinput{
+    border-radius: 25px;
+    width: 350px;
+    height: 40px;
+    border: 1px solid rgb(165, 163, 163);
+}
+body.dark #cityinput {
+    background-color: #333;
+    color: white;
+}
+.search-box {
+    position: relative;
+    width: 350px;
+}
+
+.search-box input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 90px 0 15px;
+}
+
+.search-box button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    height: 30px;
+    width: 75px;
+}
+#searchbtn{
+    border-radius: 20px;
+    background-color: rgb(28, 28, 242);
+    border: 1px solid rgb(28, 28, 242);
+    color: white;
+}

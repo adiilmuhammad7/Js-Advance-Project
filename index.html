@@ -1,42 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    <h1>Weather Dashboard</h1>
-       <button id="themebtn">🌙 Dark Mode</button>
-        <form id="weatherform">
-    <div class="search-box">
-           <input type="text" id="cityinput" placeholder="Enter the city">
-           <button type="submit" id="searchbtn">Search</button>
-    </div>     
-                
-                <button type="button" id="favoritebtn">Add to Favorites</button>
-        </form>
-    <h2 id="cityname"></h2>
-    <p id="temperature"></p>
-    <p id="humidity"></p>
-    <p id="description"></p>
-    <p id="loading"></p>
-    <p id="error"></p>
-    <img id="weathericon">
-    <p id="wind"></p>
 
-    <h2>5 day forecast</h2>
+    <header>
+        <h1>Weather Dashboard</h1>
+
+        <nav>
+            <button id="themebtn">🌙 Dark mode</button>
+        </nav>
+    </header>
+
+
+    <!-- Search -->
+
+    <form id="weatherform">
+
+        <div class="search-box">
+
+            <span class="search-icon">🔍</span>
+
+            <input
+                type="text"
+                id="cityinput"
+                placeholder="Enter the city"
+            >
+
+            <button type="submit" id="searchbtn">
+                Search
+            </button>
+
+        </div>
+
+    </form>
+
+
+    <!-- Weather + Favorites -->
+
+    <div class="main-layout">
+
+        <!-- Weather Card -->
+
+        <div id="weather-card">
+
+            <button type="button" id="favoritebtn">
+                ☆ Save
+            </button>
+
+            <div id="weather-details">
+
+                <h2 id="cityname"></h2>
+
+                <p id="temperature"></p>
+
+                <p id="humidity"></p>
+
+                <p id="description"></p>
+
+                <p id="loading"></p>
+
+                <p id="error"></p>
+
+                <img id="weathericon">
+
+                <p id="wind"></p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Favorites -->
+
+        <div id="favorite-container">
+
+            <h2>Favorite Cities</h2>
+
+            <div id="favorites"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Forecast -->
+
+    <h2 id="forecast-title">
+        5-day forecast
+    </h2>
+
     <div id="forecast"></div>
-
-    <h2>Favorite Cities</h2>
-    <div id="favorites"></div>
-
-
-
 
 
     <script src="script.js"></script>
+
 </body>
+
 </html>
